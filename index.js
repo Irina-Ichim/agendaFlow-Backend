@@ -1,12 +1,12 @@
 const express = require('express');
-
 const app = express();
+const db = require('./db');
 
 app.get('/', (req, res) => {
-  res.send('Hello, World!');
+    res.send('Hello, World!');
 });
 
-const PORT = 3000;
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+app.listen(3000, () => {
+    console.log('Server running on http://localhost:3000');
 });
+
